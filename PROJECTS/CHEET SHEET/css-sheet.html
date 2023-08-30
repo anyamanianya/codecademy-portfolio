@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="../../PICTURES/favicon.svg">
+        <link rel="stylesheet" href="../../STYLES/mainStyle.css" type="text/css">
+        <link rel="stylesheet" href="../../STYLES/CHEAT-SHEET/cheat-sheet-main.css" type="text/css">
+        <link rel="stylesheet" href="../../STYLES/CHEAT-SHEET/flex.css" type="text/css">
+        <title>CSS Cheet Sheet</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Oswald&family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-box">
+                <a href="../CHEET SHEET/html-sheet.html"><h2>HTML</h2></a>
+                <a href="#"><h2>CSS</h2></a>
+                <a href="../CHEET SHEET/js-sheet.html"><h2>JavaScrip</h2></a>
+            </div>
+                <div class="header-icon-box">
+                    <img class="header-icon" src="../../PICTURES/skrepka.svg">
+                    <h2>Cheet Sheet</h2>
+            </div>
+        </header>
+        <div class="breadcrumbs">
+            <a href="../../main.html"><p>Main page </p></a>
+            <a href="../CHEET SHEET/cheet-sheet.html"><p>Cheet Sheet </p></a>
+            <a><p class="none">CSS </p></a>
+        </div>
+        <main>
+            <div class="sidebar">
+                <div class="links">
+                    <a href="#css-intro">
+                        <p>CSS Introduction</p>
+                    </a>
+                    <a href="#syntax">
+                        <p>Syntax</p>
+                    </a>
+                    <a href="#selsctors">
+                        <p>Selectors</p>
+                    </a>
+                    <a href="#comments">
+                        <p>Comments</p>
+                    </a>
+                    <a href="#colors">
+                        <p>Colors</p>
+                    </a>
+                    <a href="#backgrounds">
+                        <p>Backgrounds</p>
+                    </a>
+                    <a href="#borders">
+                        <p>Borders</p>
+                    </a>
+                    <a href="#margins">
+                        <p>Margins</p>
+                    </a>
+                    <a href="#padding">
+                        <p>Padding</p>
+                    </a>
+                    <a href="#height-width">
+                        <p>Height/Width</p>
+                    </a>
+                    <a href="#box-model">
+                        <p>Box Model</p>
+                    </a>
+                    <a href="#outline">
+                        <p>Outline</p>
+                    </a>
+                    <a href="#text">
+                        <p>Text</p>
+                    </a>
+                    <a href="#fonts">
+                        <p>Fonts</p>
+                    </a>
+                    <a href="#icons">
+                        <p>Icons</p>
+                    </a>
+                    <a href="#links">
+                        <p>Links</p>
+                    </a>
+                    <a href="#tables">
+                        <p>Tables</p>
+                    </a>
+                    <a href="#display">
+                        <p>Display</p>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <section id="display">
+                    <h1>Display</h1>
+                    <section id="inline-block">
+                        <h2>Inline-Block</h2>
+                        <button class="toggle collapsible"><img src="../../PICTURES/down-chevron.svg" class="toggle"></button>
+                        <div class="display-content">
+                        </div>
+                    </section>
+                    <section id="block">
+                        <h2>Block</h2>
+                        <button class="toggle collapsible"><img src="../../PICTURES/down-chevron.svg" class="toggle"></button>
+                        <div class="display-content">
+                            <p class="textBox">A number of elements are set to block by the browser UA stylesheet.
+                                 They are usually container elements, like <span class="tag code">div</span>,
+                                  <span class="tag code">section</span>,
+                                   and <span class="tag code">ul</span>.
+                                    Also text “blocks” like <span class="tag code">p</span> and <span class="tag code">h1</span>. Block level elements do not sit inline but break past them. By default (without setting a width) they take up as much horizontal space as they can.
+                            </p>
+                            <div class="div-el"><p>Hi, I'm <span class="tag">div</span> element!</p></div>
+                            <h1 class="h1-el">Hi, I'm <span class="tag">h1</span> element!</h1>
+                        </div>
+                    </section>
+                    <section id="inline">
+                        <h2>Inline</h2>
+                        <button class="toggle collapsible"><img src="../../PICTURES/down-chevron.svg" class="toggle"></button>
+                        <div class="display-content">
+                            
+                        </div>
+                    </section>
+                    <section id="grid">
+                        <h2>Grid</h2>
+                        <button class="toggle collapsible"><img src="../../PICTURES/down-chevron.svg" class="toggle"></button>
+                        <div class="display-content">
+                        </div>
+                    </section>
+                    <section id="flex">
+                        <h2>Flex</h2>
+                        <button class="toggle collapsible"><img src="../../PICTURES/down-chevron.svg" class="toggle"></button>
+                        <div class="display-content">
+                        <ul>
+                            <li><span class="code">flex-start</span> (default): items are packed toward the start of the flex-direction.</li>
+                            <li><span class="code">flex-end</span>: items are packed toward the end of the flex-direction.</li>
+                            <li><span class="code">center</span>: items are centered along the line.</li>
+                            <li><span class="code">space-around</span>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</li>
+                            <li><span class="code">space-evenly</span>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+                            </li>
+                        </ul>
+                    <div class="codeBlock">
+                        <p>justify-content: flex-start;</p>
+                    </div>
+                    <div class="flex-container flex-start">
+                        <div class="box"><p>1</p></div>
+                        <div class="box"><p>2</p></div>
+                        <div class="box"><p>3</p></div>
+                    </div>
+                    <div class="codeBlock">
+                        <p>justify-content: flex-end;</p>
+                    </div>
+                    <div class="flex-container flex-end">
+                        <div class="box"><p>1</p></div>
+                        <div class="box"><p>2</p></div>
+                        <div class="box"><p>3</p></div>
+                    </div>
+
+                    <div class="codeBlock">
+                        <p>justify-content: center;</p>
+                    </div>
+                    <div class="flex-container center">
+                        <div class="box"><p>1</p></div>
+                        <div class="box"><p>2</p></div>
+                        <div class="box"><p>3</p></div>
+                    </div>
+
+                    <div class="codeBlock">
+                        <p>justify-content: space-around;</p>
+                    </div>
+                    <div class="flex-container space-around">
+                        <div class="box"><p>1</p></div>
+                        <div class="box"><p>2</p></div>
+                        <div class="box"><p>3</p></div>
+                    </div>
+
+                    <div class="codeBlock">
+                        <p>justify-content: space-between;</p>
+                    </div>
+                    <div class="flex-container space-between">
+                        <div class="box"><p>1</p></div>
+                        <div class="box"><p>2</p></div>
+                        <div class="box"><p>3</p></div>
+                    </div>
+
+                    <div class="codeBlock">
+                        <p>justify-content: space-evenly;</p>
+                    </div>
+                    <div class="flex-container space-evenly">
+                        <div class="box"><p>1</p></div>
+                        <div class="box"><p>2</p></div>
+                        <div class="box"><p>3</p></div>
+                    </div>
+                    </div>
+
+                    </section>
+                    
+                    </div>
+            </section>
+            <section>
+
+            </section>
+            </div>
+        </main>
+    </body>
+    <footer>
+        <div class="socials">
+            <a href="#"><img class="svg-i" src="../../PICTURES/linkedin.svg"></a>
+            <a href="#"><img class="svg-i" src="../../PICTURES/github.svg"></a>
+            <a href="#"><img class="svg-i" src="../../PICTURES/instagram.svg"></a>
+            <a href="#"><img class="svg-i" src="../../PICTURES/twitter.svg"></a>
+        </div>
+        <p>Chicago, Illinois</p>
+    </footer>
+    <script>
+       var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+    
+  });
+}
+        </script>
+</html>

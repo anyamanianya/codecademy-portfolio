@@ -1,0 +1,35 @@
+.flex-container{
+    height: fit-content;
+    padding: 5px;
+    margin: 20px 30px 0 30px;
+    border: 3px solid black;
+    display: flex;
+}
+.flex-container .box{
+    background-color: cornflowerblue;
+    height: 60px;
+    width: 60px;
+    margin: 7px;
+    text-align: center;
+    font-size: 40px;
+    font-family: monospace;
+    color: white;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}

@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/*-------------------------------------*/
+header{
+    height: 70px;
+}
+.header-icon-box{
+    height: 70px;
+    display: inline-block;
+    width: fit-content;
+}
+.header-icon-box h2{
+    display: inline-block;
+    padding: 15px 0;
+    vertical-align: top;
+}
+.header-icon{
+    width: 50px;
+    height: 50px;
+    padding: 10px 5px 10px 10px;
+}
+.header-box{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    float: right;
+    vertical-align: middle;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-box h2{
+    display: inline-block;
+}
+.header-box h2:hover{
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+/*-------------------------------------*/
+.aboutMe{
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.aboutMe img{
+    height: 400px;
+}
+.aboutMe .textBox{
+    position: relative;
+    text-align: justify;
+    padding: 30px;
+}
+.aboutMe .textBox h1{
+    margin-bottom: 40px;
+}
+
+/*-------------------------------------*/
+.projects{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.projects .box{
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    height: fit-content;
+    width: 29%;
+    margin-right: 30px;
+    padding: 20px 0;
+}
+.projects .box:hover{
+    padding: 25px 5px;
+    background-image: url(https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_500/MTc2MjY5NzA3OTY2NDI0MjU0/architecture-plan-reprographics-pt2.webp);
+    transition: 0.5s;
+}
+.projects .box:hover button{
+   background-color: rgba(0, 0, 0, 0.362);
+}
+.projects .box h1{
+    display: block;
+    margin: 0 auto 20px auto;
+    width: fit-content;
+}
+.projects .box p{
+    text-align: justify;
+    margin: 0 15px 20px 15px;
+}
+
+/* created for second section on the main page */
+.projects-2{
+    margin: 0 50px 50px;
+    display: flex;
+    background-color: black;
+    height: 400px; 
+    color: white;
+}
+.projects-2 .textBox{
+    display: inline-block;
+    width: 50%;
+    padding: 30px;
+    text-align: justify;
+}
+.projects-2 h1, p{
+    margin-bottom: 30px;
+}
+.projects-2 button{
+    margin: 50px auto;
+}
+.projects-2 .imgBox{
+    width: 50%;
+    margin: 0;
+    display: inline-block;
+}
+.projects-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.last-el{
+    margin: 0 !important;
+}
+
+/*-------------------------------------*/
+button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    display: block;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* social media icons */
+.socials{
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+/*-------------------------------------*/
+.svg-i{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.svg-i:hover{
+    filter: brightness(0) saturate(100%) invert(67%) sepia(6%) saturate(4761%) hue-rotate(182deg) brightness(92%) contrast(90%);
+}
+
+/*-------------------------------------*/
+footer p{
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+}
+footer{
+    padding: 30px;
+    margin-bottom: 0;
+    background-color: #030303;
+    color: white;
+}
+
+
+
+

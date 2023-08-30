@@ -1,0 +1,124 @@
+h1{
+    font-size: 60px;
+}
+.code{
+    font-family: monospace;
+    color: cornflowerblue;
+    font-size: large;
+}
+p{
+    margin: 0;
+}
+ul, li{
+    margin: 10px 0;
+}
+
+/* svg image for toggle list */
+.toggle{
+    height: 25px;
+    display: inline-block;
+}
+
+/*-------------------------------------*/
+/* display html tag on the page */
+.tag::after{
+    content: ">";
+}
+.tag::before{
+    content: "<";
+}
+
+/*-------------------------------------*/
+main{
+    display: flex;
+}
+.sidebar{
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    padding: 30px;
+    background-color: #242826;
+}
+/* sidebar links */
+.links p{
+    color: rgb(157, 157, 157);
+    margin-bottom: 20px;
+    font-size: larger;
+}
+.links p:hover{
+    color:white;
+}
+
+/*-------------------------------------*/
+.breadcrumbs{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px 10px;
+}
+.breadcrumbs p{
+    display: inline-block;
+}
+.breadcrumbs p:hover{
+    color: cornflowerblue;
+}
+.breadcrumbs p::after{
+    content: '>';
+}
+.breadcrumbs .none::after{
+    content: none;
+}
+
+/*-------------------------------------*/
+.content{
+    display: inline-block;
+    max-height: 1000px;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    padding: 30px;
+}
+.content h2{
+    font-size: 40px;
+    display: inline-block;
+}
+.content .textBox{
+    margin: 20px auto;
+}
+
+/* for toggle list */
+.display-content{
+    display: none;
+    overflow: hidden;
+}
+
+.codeBlock{
+    height: fit-content;
+    width: auto;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
+    margin: 20px 0;
+    color: white;
+    background-color: #242826;
+}
+.codeBlock p{
+    font-family: monospace;
+    font-stretch: expanded;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+/* examples */
+.div-el{
+    background-color: cornflowerblue;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+.h1-el{
+    font-size: 30px;
+    padding: 10px;
+    border: 3px solid cornflowerblue;
+}
